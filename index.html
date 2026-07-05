@@ -24,34 +24,54 @@
       <nav class="nav-links">
         <a href="#features">Features</a>
         <a href="#how">How it works</a>
+        <a href="#showcase">Showcase</a>
         <a href="privacy-policy/">Privacy</a>
-        <a href="https://play.google.com/store/apps/details?id=ai.wearme.wearme_ai" target="_blank" rel="noopener">Download</a>
+        <a class="nav-download" href="https://play.google.com/store/apps/details?id=ai.wearme.wearme_ai" target="_blank" rel="noopener">Download</a>
       </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
+    <!-- Mobile navigation drawer -->
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#showcase">Showcase</a>
+      <a href="privacy-policy/">Privacy</a>
+      <a class="mm-cta" href="https://play.google.com/store/apps/details?id=ai.wearme.wearme_ai" target="_blank" rel="noopener">Download on Google Play</a>
+    </nav>
   </header>
 
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="container">
-        <span class="eyebrow"><span class="dot"></span> AI-powered virtual fashion</span>
-        <h1>See it on you<br /><span class="gradient-text">before you buy it.</span></h1>
-        <p class="lead">
-          WearMe AI lets you try on any outfit instantly. Upload your photo, paste a
-          shopping link or snap clothes in-store, and our AI shows how it looks on
-          <em>your</em> body — not a model's.
-        </p>
-        <div class="hero-cta">
-          <a class="btn-play" href="https://play.google.com/store/apps/details?id=ai.wearme.wearme_ai" target="_blank" rel="noopener">
-            <svg class="play-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path fill="#00D3FF" d="M47 24c-9 5-15 15-15 28v408c0 13 6 23 15 28l238-232L47 24z"/>
-              <path fill="#00F076" d="M47 24l238 232 66-64L86 12C72 5 58 4 47 24z"/>
-              <path fill="#FFD500" d="M285 256l66 64 96-56c22-13 22-33 0-46l-96-56-66 64z"/>
-              <path fill="#FF3D44" d="M47 488c11 20 25 19 39 12l265-152-66-64-238 204z"/>
-            </svg>
-            <span class="pt"><small>Get it on</small><span>Google Play</span></span>
-          </a>
-          <a class="btn btn-ghost" href="#how">See how it works</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> AI-powered virtual fashion</span>
+          <h1>See it on you<br /><span class="gradient-text">before you buy it.</span></h1>
+          <p class="lead">
+            WearMe AI lets you try on any outfit instantly. Upload your photo, paste a
+            shopping link or snap clothes in-store, and our AI shows how it looks on
+            <em>your</em> body — not a model's.
+          </p>
+          <div class="hero-cta">
+            <a class="btn-play" href="https://play.google.com/store/apps/details?id=ai.wearme.wearme_ai" target="_blank" rel="noopener">
+              <svg class="play-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path fill="#00D3FF" d="M47 24c-9 5-15 15-15 28v408c0 13 6 23 15 28l238-232L47 24z"/>
+                <path fill="#00F076" d="M47 24l238 232 66-64L86 12C72 5 58 4 47 24z"/>
+                <path fill="#FFD500" d="M285 256l66 64 96-56c22-13 22-33 0-46l-96-56-66 64z"/>
+                <path fill="#FF3D44" d="M47 488c11 20 25 19 39 12l265-152-66-64-238 204z"/>
+              </svg>
+              <span class="pt"><small>Get it on</small><span>Google Play</span></span>
+            </a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="hero-shot" src="assets/illustrations/onboarding_tryon.png" alt="WearMe AI virtual try-on — before and after look" loading="eager" width="1188" height="1372" />
+          <img class="hero-mascot" src="assets/illustrations/character_mira_hero.png" alt="Mira, the WearMe AI style assistant" loading="eager" width="1024" height="1536" />
         </div>
       </div>
     </section>
@@ -114,22 +134,53 @@
       </div>
     </section>
 
+    <!-- Showcase gallery -->
+    <section id="showcase">
+      <div class="container">
+        <div class="section-head">
+          <h2>Fashion, reimagined by AI</h2>
+          <p>A peek at what you can create inside WearMe AI.</p>
+        </div>
+        <div class="showcase-grid">
+          <figure class="shot">
+            <img src="assets/illustrations/onboarding_tryon.png" alt="Virtual try-on transforming an everyday outfit into a party look" loading="lazy" width="1188" height="1372" />
+            <figcaption><strong>AI Try-On</strong>Swap any outfit onto your own photo.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/illustrations/onboarding_studio.png" alt="AI Fashion Studio editorial photoshoot" loading="lazy" width="1213" height="1372" />
+            <figcaption><strong>AI Fashion Studio</strong>Editorial-grade photoshoots in a tap.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/illustrations/onboarding_import.png" alt="Importing an outfit from a shopping link" loading="lazy" width="1211" height="1372" />
+            <figcaption><strong>Shopping Link Import</strong>Pull outfits straight from any store.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/illustrations/onboarding_compare.png" alt="Comparing two looks side by side" loading="lazy" width="1213" height="1372" />
+            <figcaption><strong>Compare Looks</strong>See two outfits side by side, instantly.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section>
       <div class="container">
         <div class="cta-band">
-          <h2>The smartest way to shop fashion</h2>
-          <p>Join WearMe AI and stop guessing how clothes will look on you.</p>
-          <div style="display:flex;justify-content:center;">
-            <a class="btn-play" href="https://play.google.com/store/apps/details?id=ai.wearme.wearme_ai" target="_blank" rel="noopener">
-              <svg class="play-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path fill="#00D3FF" d="M47 24c-9 5-15 15-15 28v408c0 13 6 23 15 28l238-232L47 24z"/>
-                <path fill="#00F076" d="M47 24l238 232 66-64L86 12C72 5 58 4 47 24z"/>
-                <path fill="#FFD500" d="M285 256l66 64 96-56c22-13 22-33 0-46l-96-56-66 64z"/>
-                <path fill="#FF3D44" d="M47 488c11 20 25 19 39 12l265-152-66-64-238 204z"/>
-              </svg>
-              <span class="pt"><small>Get it on</small><span>Google Play</span></span>
-            </a>
+          <img class="cta-mascot" src="assets/illustrations/character_mira_wave.png" alt="Mira waving hello" loading="lazy" width="1024" height="1536" />
+          <div class="cta-copy">
+            <h2>The smartest way to shop fashion</h2>
+            <p>Join WearMe AI and stop guessing how clothes will look on you.</p>
+            <div class="cta-actions">
+              <a class="btn-play" href="https://play.google.com/store/apps/details?id=ai.wearme.wearme_ai" target="_blank" rel="noopener">
+                <svg class="play-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill="#00D3FF" d="M47 24c-9 5-15 15-15 28v408c0 13 6 23 15 28l238-232L47 24z"/>
+                  <path fill="#00F076" d="M47 24l238 232 66-64L86 12C72 5 58 4 47 24z"/>
+                  <path fill="#FFD500" d="M285 256l66 64 96-56c22-13 22-33 0-46l-96-56-66 64z"/>
+                  <path fill="#FF3D44" d="M47 488c11 20 25 19 39 12l265-152-66-64-238 204z"/>
+                </svg>
+                <span class="pt"><small>Get it on</small><span>Google Play</span></span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -153,5 +204,34 @@
       <p class="copyright">© 2026 WearMe AI. See It On You Before You Buy It.</p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var menu = document.getElementById('mobileMenu');
+      if (!toggle || !menu) return;
+
+      function setOpen(open) {
+        menu.classList.toggle('open', open);
+        toggle.classList.toggle('is-active', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        document.body.classList.toggle('menu-open', open);
+      }
+
+      toggle.addEventListener('click', function () {
+        setOpen(!menu.classList.contains('open'));
+      });
+
+      // Close the drawer after tapping any link inside it
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () { setOpen(false); });
+      });
+
+      // Close on Escape
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
+  </script>
 </body>
 </html>
